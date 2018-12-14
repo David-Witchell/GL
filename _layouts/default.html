@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <footer class="site-footer">
+        <span class="site-footer-site_disclosure">Site Disclosure | The materials and content contained on this website may be considered advertising for legal services under the laws and rules of professional conduct of the jurisdictions in which we practice. These materials have been prepared by The Goldsholle Law & Partners, for informational purposes only, may not reflect current legal developments, and do not constitute legal advice. The content of this website should not be used as a substitute for the professional judgment of an attorney. The application of laws varies from state to state, and only an attorney licensed to practice in your jurisdiction can provide you with appropriate legal assistance. The decision to hire a lawyer is an important one, and should not be based on advertisements. The information contained on this website is offered to the general public, without any knowledge as to your particular factual circumstances. Before you decide to hire Goldsholle Law & Partners for legal advice, please contact us and ask for free written information about our qualifications and experience. Your use of this website does not create an attorney-client relationship. Please do not send or share with us any confidential information about you or any specific legal problem without the express authorization of an attorney at Goldsholle Law & Partners .Prior results do not guarantee a similar outcome</a>.</span>      
+      </footer>
+     </main>
+  </body>
+</html>
+      <footer class="site-footer"> 
+        <span class="site-footer-site_location"> <center> US Offices: 142 West 57th Street, 11th floor, New York City, NY 10019 | Tel +1 646 918 1606 | Fax +1 646 762 9486  </center> 
+          <center> UK Offices: 2 Southbank Place London SE1 7NW | Tel +44 203 871 8783 | Fax +44 203 871 8783</center>
+    </footer> 
+    </main>
+  </body>
+</html>
+<footer class="site-footer"> 
+        <span class="site-footer-site_location"> <center> © Goldsholle Law & Partners 2018 <center> </center>
+    </footer> 
+    </main>
+  </body>
+</html>
